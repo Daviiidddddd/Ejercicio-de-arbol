@@ -1,6 +1,7 @@
 # Proyecto: Árbol de Sintaxis en Python
+## David Castellanos
 
-En este caso lo que hicimos fue crear un programa en **Python** que recibe una gramática (`gra.txt`) y una cadena de prueba, y luego nos imprime el árbol de sintaxis.  
+En este caso lo que se hizo fue crear un programa en **Python** que recibe una gramática (`gra.txt`) y una cadena de prueba, y luego nos imprime el árbol de sintaxis.  
 
 La idea es que podamos escribir expresiones como `2 + 3 * 4` y ver cómo se arma el árbol según las reglas de la gramática.
 
@@ -10,13 +11,13 @@ La idea es que podamos escribir expresiones como `2 + 3 * 4` y ver cómo se arma
 
 - `gra.txt`: acá está la gramática que usamos.
 - `arbol.py`: el programa en Python que lee la gramática, pide la cadena y arma el árbol.
-- `README.md`: este archivo que estás leyendo.
+- `README.md`: es el README.
 
 ---
 
 ## Cómo usarlo
 
-1. Guardás la gramática en un archivo `gra.txt`. En este caso se ve así:
+1. Se pone y se guarda la gramática en un archivo `gra.txt`. En este caso se ve así:
 
    ```
    E -> E opsuma T | T
@@ -24,13 +25,13 @@ La idea es que podamos escribir expresiones como `2 + 3 * 4` y ver cómo se arma
    F -> id | num | pari E pard
    ```
 
-2. Ejecutás el programa:
+2. Luego se ejecuta el programa de Python:
 
    ```bash
    python arbol.py
    ```
 
-3. Ahora podés escribir expresiones normales, por ejemplo:
+3. Ahora podemos escribir expresiones normales, en este caso se usaron las del ejemplo del archivo pero igual podrian variar:
 
    ```
    2 + 3 * 4
@@ -44,7 +45,7 @@ La idea es que podamos escribir expresiones como `2 + 3 * 4` y ver cómo se arma
 
 ## Ejemplos
 
-Acá te dejo unas capturas de cómo se ve en consola:
+Asi se ve una vez ya ejecutado
 
 ### Ejemplo 1
 Expresión: `2 + 2 * 4`
@@ -67,11 +68,7 @@ Expresión: `2 + 3 * ( 4 - 5 )`
 
 ---
 
-## Cosas a tener en cuenta
-
-- Acá los números se convierten en `num`, y los operadores en `opsuma`, `opmul`, etc.
-- Si escribís algo raro que no está en la gramática, el programa te avisa con un error.
-- Podés probar con distintas cadenas y ver cómo cambia la estructura del árbol.
+## Fin
 
 ---
 
